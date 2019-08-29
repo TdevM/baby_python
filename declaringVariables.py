@@ -10,8 +10,8 @@ doubleQuotedStringVariable = "This is a double quoted string variable"
 print(singleQuotedStringVariable + doubleQuotedStringVariable)  # Concatenation just like JS
 
 okayIAmInteger = 8
-print(okayIAmInteger)  # I am a happy integer
+print(okayIAmInteger)  # >> 8 (I am a happy integer)
 print(type(okayIAmInteger))  # <class 'int'>
 okayIAmInteger = 'You will be a string now'
 print(type(okayIAmInteger))  # <class 'str'>
-print(okayIAmInteger)  # Woot I'm a string?
+print(okayIAmInteger)  # >> You will be a string now  (Woot I'm a string?)
