@@ -5,11 +5,12 @@
 # Set is a collection which is unordered and un-indexed. No duplicate members.
 # Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
 
-numbers_integers = [1, 2, 3, 5]  # a list
+numbers_integers = [1, 2, 3, 4, 5]  # a list
 string_fruits = ["apple", "banana", "cherry"]
 
 print(numbers_integers)  # >> [1, 2, 3, 5]
 print(string_fruits)  # >> ['apple', 'banana', 'cherry']
+print(len(numbers_integers))  # >> 5
 print('First fruit in the list is: ' + string_fruits[0])  # >> First fruit in the list is: apple
 print(
     'Last number in the list is: ' + str(numbers_integers[-1])
@@ -26,3 +27,11 @@ print(list_of_alpha_bets)  # >> [1, 'B', 'C', 'D']
 print('\nLooping...\n')
 for x in string_fruits:
     print(x)
+
+# Append to a list
+list_of_alpha_bets.append('E')
+print(list_of_alpha_bets)  # >> [1, 'B', 'C', 'D', 'E'] (Adds E to the end of the list)
+
+# Insert into the list
+list_of_alpha_bets.insert(1, '2')
+print(list_of_alpha_bets)  # >> [1, '2', 'B', 'C', 'D', 'E'] (Inserts 2 between list at index 2)
