@@ -16,7 +16,9 @@ okayIAmInteger = 'You will be a string now'
 print(type(okayIAmInteger))  # <class 'str'>
 print(okayIAmInteger)  # >> You will be a string now  (Woot I'm a string?)
 
-iamasmallcasevariable = 'Lower case'
-IAMASMALLCASEVARIABLE = 'UPPER CASE'
+iamasmallcasevariable = 'sometext'
+IAMASMALLCASEVARIABLE = 'sometext'
 
-print(iamasmallcasevariable is IAMASMALLCASEVARIABLE)  # >> False
+print(id(iamasmallcasevariable))  # >> 4378925616 (Memory address)
+print(id(IAMASMALLCASEVARIABLE))  # >> 4378927856 (Memory address)
+print(id(iamasmallcasevariable) is id(IAMASMALLCASEVARIABLE))  # >> False
