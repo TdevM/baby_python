@@ -15,3 +15,8 @@ print(type(okayIAmInteger))  # <class 'int'>
 okayIAmInteger = 'You will be a string now'
 print(type(okayIAmInteger))  # <class 'str'>
 print(okayIAmInteger)  # >> You will be a string now  (Woot I'm a string?)
+
+iamasmallcasevariable = 'Lower case'
+IAMASMALLCASEVARIABLE = 'UPPER CASE'
+
+print(iamasmallcasevariable is IAMASMALLCASEVARIABLE)  # >> False
